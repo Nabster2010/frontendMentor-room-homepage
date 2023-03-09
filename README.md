@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [github repo]()
-- Live Site URL: [live site]()
+- Solution URL: [github repo](https://github.com/Nabster2010/frontendMentor-room-homepage)
+- Live Site URL: [live site](https://frontend-mentor-room-homepage-chi.vercel.app/)
 
 ### Built with
 
