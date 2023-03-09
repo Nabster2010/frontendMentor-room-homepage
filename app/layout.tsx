@@ -1,18 +1,24 @@
-import './globals.css'
+import "./globals.css";
+import { League_Spartan } from "@next/font/google";
+import NavBar from "./navbar";
+
+const leagueSpartan = League_Spartan({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-spartan",
+});
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html lang="en" className={`${leagueSpartan.variable}`}>
       <head />
-      <body>{children}</body>
+      <body>
+        <main>{children}</main>
+      </body>
     </html>
-  )
+  );
 }
